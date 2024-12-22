@@ -1,0 +1,22 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFCA41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 10; /* Sicherstellen, dass die Navbar über dem Inhalt liegt */
+}
+
+.navbar-logo {
+    max-height: 40px;
+    cursor: pointer;
+}
+
+/* Platz für die Navbar einfügen, damit sie Bier-Detail-Text nicht überdeckt */
+.page-content {
+    padding-bottom: 90px; 
+}

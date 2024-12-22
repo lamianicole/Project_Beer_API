@@ -1,0 +1,43 @@
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    max-width: 300px;
+    text-align: left; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'RobotoSlab-Regular';
+    margin: 0 0 20px 0;
+}

@@ -1,0 +1,34 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.error-image {
+    max-width: 100vw; 
+    max-height: 80vh; 
+    height: auto;
+}
+
+.error-text {
+    position: absolute;
+    top: 25%; 
+    right: 5%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    color: #343a40;
+    font-size: 2.9rem;
+    font-family: 'RobotoSlab-Bold';
+    border-radius: 5px;
+}
