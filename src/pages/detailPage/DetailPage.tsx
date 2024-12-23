@@ -1,8 +1,9 @@
 import "./DetailPage.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { IBeer } from "../../../interfaces/IBeer";
 import NotFound from "../notFound/NotFound";
 import Navbar from "../../components/navbar/navbar";
+import "../../components/navbar/navbar.css";
 
 interface DetailPageProps {
     beers: IBeer[];
@@ -21,15 +22,20 @@ const DetailPage: React.FC<DetailPageProps> = ({ beers }) => {
         <div className="detail-page"> 
             <div className="content"> 
                 <img src={beer.image_url} alt={beer.name} className="beer-image" /> 
-                    <h1>{beer.name}</h1> 
+                    <h2>{beer.name}</h2> 
                     <p className="tagline">{beer.tagline}</p> 
                     <p className="brewed-attenuation">First Brewed: {beer.first_brewed}</p> 
                     <p className="brewed-attenuation">Attenuation Level: {beer.attenuation_level}</p> 
                     <p>{beer.description}</p> 
-                    <p>Brewer's Tips: {beer.brewers_tips}</p> <p>Contributed by: {beer.contributed_by}</p> 
-            </div>  
-            <Navbar />
-        </div>
+                    <p>Brewer's Tips: {beer.brewers_tips}</p> 
+                    <p>Contributed by: {beer.contributed_by}</p> 
+                    {/* um eins zurück arrow */}
+                    <Link to="/beers" className="back-button"> 
+                        <img src="/img/back-arrow.png" alt="Back to Beers" className="back-arrow" /> 
+                    </Link> 
+            </div> 
+            <Navbar /> 
+        </div> 
         </div>
     );
 };

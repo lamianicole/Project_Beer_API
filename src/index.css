@@ -1,16 +1,16 @@
 @font-face {
     font-family: "RobotoSlab-Bold";
-    src: url("/public/fonts/RobotoSlab-Bold.ttf");
+    src: url("/fonts/RobotoSlab-Bold.ttf");
 }
 
 @font-face {
     font-family: "RobotoSlab-Light";
-    src: url("/public/fonts/RobotoSlab-Light.ttf");
+    src: url("/fonts/RobotoSlab-Light.ttf");
 }
 
 @font-face {
     font-family: "RobotoSlab-Regular";
-    src: url("/public/fonts/RobotoSlab-Regular.ttf");
+    src: url("/fonts/RobotoSlab-Regular.ttf");
 }
 
 html {
@@ -23,6 +23,10 @@ html {
     box-sizing: border-box;
 }
 
-img {
+img.global-image {
     max-height: 100%;
+}
+
+body, h1, p {
+    font-family: 'RobotoSlab-Regular'; 
 }

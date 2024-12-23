@@ -5,6 +5,7 @@ import { IBeer } from "../../../interfaces/IBeer";
 import Navbar from "../../components/navbar/navbar";
 import Loader from "../../components/loader/Loader";
 import NotFound from "../notFound/NotFound";
+import { Link } from "react-router-dom";
 
 const RandomBeer = () => {
     const [beer, setBeer] = useState<IBeer | null>(null);
@@ -34,11 +35,16 @@ const RandomBeer = () => {
         <div className="random-beer"> 
             <h1>{beer.name}</h1> 
             <img src={beer.image_url} alt={beer.name} className="beer-image" /> 
-            <p className="description">{beer.description}</p> <p>Brewer's Tips: {beer.brewers_tips}</p> <p>Contributed by: {beer.contributed_by}</p> 
-        
+            <p className="description">{beer.description}</p> 
+            <p>Brewer's Tips: {beer.brewers_tips}</p> 
+            <p>Contributed by: {beer.contributed_by}</p> 
+            {/* um eins zurück Arrow */}
+            <Link to="/beers" className="back-button"> 
+                <img src="/img/back-arrow.png" alt="Back to Beers" className="back-arrow" /> 
+            </Link> 
             <Navbar /> 
-            </div>
-        </div>
+        </div> 
+        </div> 
     );
 };
 

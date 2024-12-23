@@ -14,7 +14,7 @@
     display: inline-block;
 }
 
-.error-image {
+.not-found-container .error-image {
     max-width: 100vw; 
     max-height: 80vh; 
     height: auto;

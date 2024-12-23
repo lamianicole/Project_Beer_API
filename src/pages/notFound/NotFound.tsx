@@ -5,7 +5,7 @@ const NotFound: React.FC = () => {
         <div className="not-found-container">
             <div className="image-container">
             <img src="./img/not-found.png" alt="empty bottle" className="error-image" />
-                <h1 className="error-text">We're sorry. Nothing to drink here ...</h1>
+                <h4 className="error-text">We're sorry. Nothing to drink here ...</h4>
             </div>
         </div>
     );
