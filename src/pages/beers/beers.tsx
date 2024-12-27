@@ -24,7 +24,7 @@
 import React from "react";
 import BeerCard from "../../components/beerCard/BeerCard";
 import Loader from "../../components/loader/Loader";
-import "./Beers.css";
+import "./beers.css";
 import { IBeer } from "../../../interfaces/IBeer";
 
 interface BeersProps {
