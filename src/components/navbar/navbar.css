@@ -6,9 +6,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 65px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
-    z-index: 10; /* Sicherstellen, dass die Navbar über dem Inhalt liegt */
+    z-index: 10;
 }
 
 .navbar-logo {
@@ -16,7 +16,6 @@
     cursor: pointer;
 }
 
-/* Platz für die Navbar einfügen, damit sie Bier-Detail-Text nicht überdeckt */
 .page-content {
     padding-bottom: 90px; 
-}
+} 
